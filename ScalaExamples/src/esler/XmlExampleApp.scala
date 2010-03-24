@@ -30,12 +30,12 @@ object XmlExampleApp {
     //
     for (node <- xmlDoc \ "natures" \ "nature") {
       println(node.text.trim)
-    } 
+    }
 
     // With syntax emphasizing method calls.
     //
     for (node <- xmlDoc.\("natures").\("nature")) {
       println(node.text.trim)
-    } 
-}
+    }
+  }
 }
