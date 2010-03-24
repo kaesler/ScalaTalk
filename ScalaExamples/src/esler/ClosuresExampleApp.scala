@@ -2,9 +2,12 @@ package esler
 
 import java.text.DateFormatSymbols
 
-object ScalaExampleApp {
+object ClosuresExampleApp {
 
   // Toy program to print out the months that contain
+  // the letter M in descending alphabetic order separated
+  // by commas.
+  //
   def main(args : Array[String]) : Unit = {
 
 	// Get the array of month names
@@ -30,7 +33,7 @@ object ScalaExampleApp {
       
       // Concatenate comma-separated.
       //
-      reduceLeft { (s: String , t: String ) => s + "," + t }
+      reduceLeft { (s, t) => s + "," + t }
     )
 
     println(result)
